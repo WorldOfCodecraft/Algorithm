@@ -23,6 +23,7 @@ public class S02_Selection {
             swap(from, largestIndex, unsortedIndex);
             Arrays.stream(from).boxed().collect(Collectors.toList()).forEach(item -> System.out.print(item + " "));
             System.out.println();
+            Arrays.stream(from).boxed().filter(i -> i < 10).collect(Collectors.toList()).forEach(i -> System.out.print(i.toString()));
         }
     }
 
